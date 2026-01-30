@@ -20,12 +20,12 @@ public class AverageSquares {
         int count = 0;
         int i = startNum;
 
-        // while loop
-        while (i <= endNum) {
+        // do-while loop
+        do {
             total = total + (i * i);
             count++;
             i++;
-        }
+        } while (i <= endNum);
 
         double average = total / count;
         System.out.println(average);
